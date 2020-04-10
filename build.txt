@@ -1,0 +1,6 @@
+# pip 18 required, pip 19 and 20 fails to install pyinstaller
+pip install pyinstaller
+# don't use UPX to compress the executable, it breaks VCRUNTIME140.DLL digital signature.
+# also you may face an error regarding pyinstaller-script.py, you need to edit it and add to
+# the first or second line: # This Python file uses the following encoding: utf-8
+pyinstaller mainprog.py -F -i file.ico
