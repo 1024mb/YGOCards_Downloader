@@ -1,5 +1,9 @@
-# YGOCards_Downloader
-Download over 12.000 YGO cards from "YGOPRODECK.com"
+﻿# YGOCards_Downloader-Fork
 
-A gui system using PyQt5 was implemented, however not perfect and uses threading.
-Use the MainProg.py to download your cards.
+## Changes:
+
+- It now downloads the card art instead of full card images.
+- Updated cards database text file to the current cards as of 2020-04-09
+- Deleted old build, use **MainProg.py** to download and first install the requeriments (which is just PyQt5).
+
+The program automatically skips the already download images, it only download one image at a time.
