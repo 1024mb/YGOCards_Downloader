@@ -16,14 +16,14 @@ def Start():
             end = time.time()
             elapsedtime = end - start
 
-            linevar = 13636 - ln
+            linevar = 10699 - ln
             speed = 0
             if type(size) != type(None):
                 try:
                     speed = ((int(size)/1024)/elapsedtime)
                 except ZeroDivisionError:
                     pass
-            percentage = 100 - round((linevar*50)/6815)
+            percentage = 100 - round((linevar*50)/5349.5)
             if percentage > 99 and linevar !=0:
                     percentage = 99
             if ch != "":
